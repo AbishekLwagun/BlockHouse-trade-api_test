@@ -12,7 +12,7 @@ This project demonstrates how I, **Abishek Lwagun**, set up a CI/CD pipeline usi
 - 
 POST Request to Create an Order:
 ```
-curl -X POST http://<your-ec2-public-ip>:8080/orders \
+curl -X POST http://3.142.147.59:8080/orders \
 -H "Content-Type: application/json" \
 -d '{"symbol": "AAPL", "price": 150, "quantity": 10, "order_type": "buy"}'
 
