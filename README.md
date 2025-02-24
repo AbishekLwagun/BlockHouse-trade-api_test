@@ -9,7 +9,11 @@ This project demonstrates how I, **Abishek Lwagun**, set up a CI/CD pipeline usi
 - **Containerization**: Docker
 - **Deployment**: AWS EC2 (Ubuntu)
 - **Database**: SQLite (for simplicity)
-- 
+
+```
+http://3.142.147.59:8080
+```
+
 POST Request to Create an Order:
 ```
 curl -X POST http://3.142.147.59:8080/orders \
