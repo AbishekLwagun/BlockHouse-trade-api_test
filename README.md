@@ -19,16 +19,17 @@ curl -X POST http://<your-ec2-public-ip>:8080/orders \
 ```
 GET Request to Fetch Orders:
 ```
-curl http://<your-ec2-public-ip>:8080/orders
+curl http://3.142.147.59:8080/orders
 The POST request creates a new order, and the GET request fetches all the orders.
 ```
 
 ## GitHub Secrets Configuration
 For the GitHub Actions workflow to SSH into EC2, I added the following secrets in my GitHub repository:
-
+```
 EC2_SSH_PRIVATE_KEY: My EC2 private SSH key.
 EC2_PUBLIC_IP: The public IP of my EC2 instance.
 DOCKER_USERNAME: My Docker Hub username.
 DOCKER_PASSWORD: My Docker Hub password or token.
-Conclusion
+```
+## Conclusion
 I successfully created a Dockerized backend service, set up a CI/CD pipeline with GitHub Actions, and deployed the application to AWS EC2. The pipeline automatically builds, tests, and deploys the app when changes are made to the main branch. I also tested the POST and GET requests to ensure the orders are being processed correctly.
